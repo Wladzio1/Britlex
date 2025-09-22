@@ -15,18 +15,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html">Brit<span class="header-logo-span">lex</span></a>
+          <svg class="burger-menu-icon">
+            <use href="./images/icons.svg#icon-burger-menu">
+          </svg>
         </nav>
       </div>
     </header>
 
     <main>
-        <section></section>
+        <section class="main-section">
+          <img 
+            src="./images/1x/main-img.png" 
+            alt="black-and-white pcture of the girl learninbg new language"
+            srcset="./images/1x/main-img.png 1x, ./images/2x/main-img@2x.png 2x, ./images/2x/main-img@3x.png 3x"
+            >
+        </section>
     </main>
 </body>
 </html>

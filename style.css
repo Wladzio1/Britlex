@@ -6,6 +6,10 @@ body {
     color: #263238;
 }
 
+a, ul, ol {
+    text-decoration: none;
+}
+
 h1 {
     font-weight: 600;
     font-size: 24px;
@@ -52,9 +56,32 @@ section {
 /* HEADER SECTION */
 
 header {
-    padding: 36px 0;
+    padding: 20px 0;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header-logo-span {
     color: #939393;
+}
+
+.header-logo {
+    color: #263238;
+    font-size: 24px;
+    font-weight: 400;
+}
+.burger-menu-icon {
+    fill: #39515E;
+    width: 34px;
+    height: 19px;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+    padding-top: 0;
 }
