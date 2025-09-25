@@ -21,7 +21,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="header-logo" href="./index.html">Brit<span class="header-logo-span">lex</span></a>
+          <a class="logo" href="./index.html">Brit<span class="logo-span">lex</span></a>
           <svg class="burger-menu-icon">
             <use href="./images/icons.svg#icon-burger-menu">
           </svg>
@@ -33,6 +33,7 @@
         <section class="main-section">
           <div class="container main-container">
             <img 
+            class="main-img"
             src="./images/1x/main-img.png" 
             alt="black-and-white pcture of the girl learninbg new language"
             srcset="./images/1x/main-img.png 1x, ./images/2x/main-img@2x.png 2x, ./images/2x/main-img@3x.png 3x"
@@ -170,15 +171,37 @@
               </div>
           </div>
         </section>
+      </main>
+        
+      <hr class="hr"> 
 
-        <hr class="footer-hr"> 
+      <footer class="footer">
+        <div class="container footer-container">
+          <a class="logo" href="./index.html">Brit<span class="logo-span">lex</span></a>
+          <p class="footer-text"><a href="" class="footer-text-link">Terms and Conditions</a> • <a href="" class="footer-text-link">Privacy Policy</a> • <a href="" class="footer-text-link">Cookie Policy</a></p>
+        </div>
+      </footer>
 
-        <footer class="footer">
-          <div class="container footer-container">
-            <a class="footer-logo" href="./index.html">Brit<span class="footer-logo-span">lex</span></a>
-            <p class="footer-text">Terms and Conditions • Privacy Policy • Cookie Policy</p>
+      <div class="menu-container">
+        <div class="menu">
+          <div class="menu-head">
+            <a class="logo" href="./index.html">Brit<span class="logo-span">lex</span></a>
+            <svg class="menu-close-icon" width="34" height="34">
+              <use href="./images/icons.svg#icon-close" />
+            </svg>
           </div>
-        </footer>
-    </main>
+          <hr class="menu-hr">
+          <nav class="menu-nav">
+            <ul class="site-nav-list">
+              <li class="site-nav-list-elem" href="./index.html">Home</li>
+              <li class="site-nav-list-elem" href=".skills-section">Skills</li>
+              <li class="site-nav-list-elem" href=".about-us-section">About Us</li>
+              <li class="site-nav-list-elem" href=".pricing-section">Pricing</li>
+              <li class="site-nav-list-elem" href=".contact-us-section">Contacts</li>
+            </ul>
+          </nav>
+          <button class="menu-btn" type="button">Let's Talk</button>
+        </div>
+      </div>
 </body>
 </html> 

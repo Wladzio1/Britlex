@@ -2,7 +2,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  text-align: center;
   color: #263238;
 }
 
@@ -53,6 +52,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   margin: 0;
   padding: 0 14px;
@@ -62,7 +62,7 @@ section {
   padding-top: 60px;
 }
 
-/* HEADER SECTION */
+/* HEADER SECTION (mobile) */
 
 header {
   padding: 20px 0;
@@ -75,11 +75,15 @@ header {
   width: 100%;
 }
 
-.header-logo-span {
+.logo-span {
   color: #939393;
 }
 
-.header-logo {
+.logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   color: #263238;
   font-size: 24px;
   font-weight: 300;
@@ -89,9 +93,12 @@ header {
   fill: #39515e;
   width: 34px;
   height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* MAIN SECTION */
+/* MAIN SECTION (mobile) */
 
 .main-section {
   padding-top: 0;
@@ -109,7 +116,7 @@ header {
   color: #fff;
 }
 
-/* SKILLS SECTION */
+/* SKILLS SECTION (mobile) */
 
 .skills-cards-list {
   display: flex;
@@ -135,7 +142,7 @@ header {
   font-size: 14px;
 }
 
-/* ABOUT US SECTION */
+/* ABOUT US SECTION (mobile) */
 
 .about-us-container {
   display: flex;
@@ -157,6 +164,9 @@ header {
 }
 
 .quan-list-elem {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 24px;
   color: #263238;
@@ -168,7 +178,15 @@ header {
   color: #8f95a5;
 }
 
-/* PRICING-SECTION */
+/* PRICING SECTION (mobile) */
+
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 60px;
+}
 
 .pricing-list-card {
   display: flex;
@@ -200,7 +218,7 @@ header {
   color: #546269;
 }
 
-/* CONTACT SECTION */
+/* CONTACT SECTION (mobile) */
 
 .contact-us-container {
   display: flex;
@@ -254,24 +272,142 @@ footer {
   gap: 16px;
 }
 
-.footer-hr {
+.hr {
   margin: 0 auto;
   max-width: 100%;
   margin: 0 14px;
-}
-
-.footer-logo-span {
-  color: #939393;
-}
-
-.footer-logo {
-  color: #263238;
-  font-size: 24px;
-  font-weight: 300;
 }
 
 .footer-text {
   font-weight: 400;
   font-size: 10px;
   color: #8f95a5;
+}
+
+.footer-text-link {
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration: none;
+  color: #8f95a5;
+}
+
+/* BURGER MENU */
+
+.menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-container {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  padding: 0 14px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.site-nav-list {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.site-nav-list-elem {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 2.95455;
+  color: #263238;
+}
+
+.menu-hr {
+  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
+}
+
+.menu-btn {
+  border: 2px solid #263238;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 330px;
+  height: 65px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  color: #263238;
+  padding: 0;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 575px) {
+  /* MAIN RULES (tablet-s) */
+
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 80px 0;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+
+  /* HEADER SECTION (tablet-s) */
+
+  .burger-menu-icon {
+    width: 42px;
+    height: 24px;
+  }
+
+  /* MAIN SECTION (tablet-s) */
+
+  .main-img {
+    width: 424px;
+    height: 424px;
+  }
+
+  .main-container {
+    gap: 24px;
+  }
+
+  /* BURGER MENU (tablet-s) */
+
+  .menu-container {
+    padding: 0 32px;
+  }
+
+  .menu-close-icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .menu-head {
+    padding: 36px 0;
+  }
 }
