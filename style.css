@@ -242,7 +242,7 @@ header {
 
 .subscription-input {
   width: 292px;
-  height: 50px;
+  height: 60px;
   border: 1px solid #8f95a5;
   border-radius: 6px;
   font-weight: 300;
@@ -273,7 +273,6 @@ footer {
 }
 
 .hr {
-  margin: 0 auto;
   max-width: 100%;
   margin: 0 14px;
 }
@@ -362,12 +361,20 @@ footer {
     font-size: 34px;
   }
 
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   section {
-    padding: 80px 0;
+    padding-top: 80px;
   }
 
   .logo {
@@ -409,5 +416,93 @@ footer {
 
   .menu-head {
     padding: 36px 0;
+  }
+
+  /* SKILLS SECTION (tablet-s) */
+
+  .skills-container {
+    gap: 20px;
+  }
+
+  .skills-cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 34px;
+    column-gap: 30px;
+    width: 100%;
+  }
+
+  .skills-card {
+    height: 534px;
+    width: 240px;
+    padding: 26px 16px;
+    justify-content: space-between;
+  }
+
+  /* ABOUT US (tablet-s) */
+
+  .about-us-img {
+    width: 352px;
+    height: 352px;
+  }
+
+  .quan-list {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  /* PRICING SECTION (tablet-s) */
+
+  .pricing-card-img-1 {
+    width: 291px;
+    height: 291px;
+  }
+
+  .pricing-card-img-2 {
+    width: 314px;
+    height: 241px;
+  }
+
+  .pricing-card-img-3 {
+    width: 291px;
+    height: 291px;
+  }
+
+  /* CONTACT-US SECTION (tablet-s) */
+
+  .contact-us-img {
+    width: 358px;
+    height: 322px;
+  }
+
+  .subscription-div {
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+  }
+
+  .subscription-input {
+    flex: 2;
+  }
+
+  .subscription-btn {
+    flex: 1;
+  }
+
+  /* FOOTER (tablet-s) */
+
+  .footer-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hr {
+    margin: 0 32px;
+  }
+
+  .footer-text-link {
+    font-size: 12px;
   }
 }
