@@ -108,12 +108,21 @@ header {
   gap: 16px;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-btn {
   width: 100%;
   max-width: 289px;
   height: 60px;
   border-radius: 6px;
   color: #fff;
+  font-size: 16px;
 }
 
 /* SKILLS SECTION (mobile) */
@@ -399,8 +408,16 @@ footer {
     height: 424px;
   }
 
+  .main-btn {
+    font-size: 18px;
+  }
+
   .main-container {
     gap: 24px;
+  }
+
+  .main-content {
+    gap: 26px;
   }
 
   /* BURGER MENU (tablet-s) */
@@ -504,5 +521,66 @@ footer {
 
   .footer-text-link {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* MAIN RULES (tablet-m) */
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  /* HEADER SECTION (tablet-m) */
+
+  .header {
+    padding: 40px 0;
+  }
+
+  .burger-menu-icon {
+    width: 30px;
+    height: 17px;
+  }
+
+  /* MAIN SECTION (tablet-m) */
+
+  .main-container {
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .main-content {
+    gap: 26px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .main-img {
+    width: 352px;
+    height: 352px;
+  }
+
+  /* SKILLS SECTION (tablet-m) */
+
+  .skills-cards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 8px;
   }
 }
