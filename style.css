@@ -635,7 +635,7 @@ footer {
   /* HEADER SECTION (tablet-m) */
 
   .header {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   .burger-menu-icon {
@@ -648,8 +648,8 @@ footer {
   .main-container {
     flex-direction: row-reverse;
     gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .main-content {
@@ -886,5 +886,68 @@ footer {
 
   .contact-us-container {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* MAIN RULES (desktop) */
+
+  h1 {
+    line-height: 62px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 80px;
+  }
+
+  /* MAIN SECTION (desktop) */
+
+  .main-img {
+    width: 540px;
+    height: 540px;
+  }
+
+  .main-btn {
+    height: 80px;
+    font-size: 22px;
+  }
+
+  /* SKILLS SECTION (desktop) */
+
+  .skills-card > img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skills-card:first-child > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .skills-card-content-h-p {
+    gap: 12px;
+  }
+
+  .skills-card-btn {
+    font-size: 16px;
+  }
+
+  /* ABOUT US SECTION (desktop) */
+
+  .about-us-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .quan-list-elem {
+    font-size: 32px;
   }
 }
